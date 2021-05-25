@@ -1,0 +1,86 @@
+.button {
+    background-color: red;
+    transition: background-color 1s;
+}
+
+.button:hover {
+    background-color: blue;
+}
+
+.square {
+    border: 1px solid black;
+    width: 200px;
+    height: 20px;
+    margin: 2px;
+    transition: width 0.1s, height 0.1s;
+}
+
+.square:hover {
+    width: 222px;
+    height: 22px;
+}
+
+.grid {
+    display: flex;
+    margin: 30px;
+}
+
+@keyframes basic {
+    from {background-color: yellow;}
+    to {background-color: red;}
+}
+
+.color-change {
+    height: 200px;
+    width: 200px;
+    animation: basic;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes bounce {
+    0% {
+        margin: 0 113px;
+        background-color: blue;
+    }
+    25% {
+        margin: 113px 225px;
+        background-color: blueviolet;
+    }
+    50% {
+        margin: 225px 113px;
+        background-color: violet;
+    }
+    75% {
+        margin: 113px 0;
+        background-color: blueviolet;
+    }
+    100% {
+        margin: 0 113px;
+        background-color: blue;
+    }
+}
+
+.ball-contain {
+    border: 1px solid black;
+    width: 250px;
+    height: 250px;
+}
+
+.ball {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    animation: bounce;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.container {
+    border: 3px solid grey;
+    padding: 5px;
+    margin: 5px;
+}
